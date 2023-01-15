@@ -1,0 +1,151 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+    background-color:gray;
+}
+.body img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items:center;
+
+}
+.todo{
+    position:absolute;
+    top:20%; 
+    left:10%;
+    display:flex;
+    flex-direction:column;
+    align-items:center !important;
+}
+.works{
+    position:absolute;
+    top:37%;
+    left: 4%;
+    display:flex;
+    flex-direction:column;
+    align-items:center !important;
+}
+.works ul{
+    left: 0;
+
+}
+.works ul li{
+    background-color:#f7f7f7;
+    width:600px;
+    height:40px;
+    list-style:none;
+    border-radius:6px;
+    padding:10px 20px;
+    margin: 15px 0px;
+
+}
+.works ul li:hover {
+    background: #ffc1d5;
+}
+
+.works ul li>button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color:#fc6998;
+    font-weight: 800;
+    padding: 3px 0px;
+}
+.todo img{
+    width:45px;
+    height:45px;
+}
+.todo p{
+    font-size:60px;
+    color:#fc6998;
+    padding: 10px 0px;
+}
+.todo button{
+    height:40px;
+    border:none;
+    width: 30px;
+    border-radius:6px;
+}
+.todo button i{
+    font-size:15px;
+    color:#fc6998;
+}
+#mainInput{
+    width:600px;
+    height:40px;
+    outline:none;
+    border:none;
+    border-radius:6px; 
+    padding:0px 18px;
+    font-size:16px;
+}
+.done{
+    background-color:#95bb72 !important;
+    color:#fff;
+}
+.delete {
+    display: none;
+}
+@media only screen and (max-width:1440px) {
+    .works{
+        left: 5.6%;
+    }
+
+    .works ul li{
+
+    margin: 25px 0px;
+
+}
+}
+@media only screen and (max-width:1024px){
+    .works{
+        top:50%;
+        left: 3.8%;
+    }
+    .works ul li{
+    margin: 30px 0px;
+    }
+}
+@media only screen and (max-width:768px){
+    .works{
+        left: 1.8%;
+    }
+}
+@media only screen and (max-width:425px){
+    .body img{
+        display:none;
+    }
+    #mainInput{
+        width:300px;
+
+    }
+    .todo p{
+        font-size:20px;
+    }
+    .works ul li{
+        width:300px;
+    }
+    .works{
+       
+        top:35%;
+        left: 18%;
+    }
+
+}
+@media only screen and (max-width:375px){
+    .works{
+        left: 14%;
+    }
+    .todo{ 
+        left:5%;
+    }
+}
